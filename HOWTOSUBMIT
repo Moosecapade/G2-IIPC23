@@ -1,0 +1,15 @@
+
+Group Submissions
+
+   cp yourfile /cs/IPC23/G#/.
+
+   # will be 1,2,3 or 4
+
+For individual submission, G# should be replaced with IND
+
+    e.g. cp yourfile /cs/IPC23/IND/.
+
+  In this case, your file name should have your last name.
+  
+    e.g. smith.out
+

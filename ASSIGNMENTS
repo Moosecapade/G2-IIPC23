@@ -1,0 +1,50 @@
+
+Due 11-27 collatz.out  with file0 as input  INDIVIDUAL
+Due 12-1  parse.out    with fileZ as input  GROUP
+
+Collect all parsing functions now.
+e.g. parse a line into words
+e.g. read a string up to a separator or end of line
+
+Know how to convert a string into an integer
+Know how to convert to upper case/lower case
+Know how to determine if it is a special character
+
+Due 1-19  q1.out with file1 and file1a as input - GROUP
+   Tasks: Try each of the following one at a time:
+    1. read in the phone number (add a blank after the 3rd digit) 
+       and then the company name 
+    2. for company names, if a capitalized word, put a blank in between
+    3. for company names, turn special chars into blanks
+    4. for company names, remove extra blanks
+    5. for company names, turn numbers into words (up to 999,999,999)
+    6. for company names, turn everything into upper case
+    7. sort based on transformed company names
+    8. display original names followed by phone numbers in column 53
+   Assign each task to a group member
+
+Due 1-19  q2.out with file2 as input - GROUP
+   Tasks: Try each of the following one at a time:
+    1. find all primes under 1001 quickly and store them
+    2. find the number of prime factors in a given numer and store it 
+    3. find the total number of prime factors in number! 
+         (hint: start with 1 and go up to numer so that previous results
+          can be used)
+    Assign each task to a group member
+
+For future work, you will have to submit the Tasks first before working on
+the programs.
+
+
+Due       q3.out with file3,file3a,file3b,file3c as input - GROUP 
+    Tasks: Try each of the following one at a time:
+     1. store all dictionary words and make a copy
+
+
+
+    Assign each task to a group member
+
+Due    q4.out with file4 and file4a as input - GROUP   
+    Tasks: 
+     1.
+     

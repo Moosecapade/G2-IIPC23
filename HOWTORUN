@@ -1,0 +1,12 @@
+
+To run my .out or your .out file
+
+  ./something.out  <   inputfilename
+
+
+You write your program using cin and cout but
+the input will come from the specified filename.
+
+The output must match down to the number of blank spaces.
+
+ 
