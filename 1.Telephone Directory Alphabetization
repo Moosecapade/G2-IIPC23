@@ -1,0 +1,35 @@
+Telephone Directory Alphabetization
+Based on its success in contracting previous software development efforts to programming contest teams, the String& Tin Can (S&TC) Telephone Company has now decided to produce its telephone directories internally. Your team has been hired to develop a program that will take subscriber names and telephone numbers and alphabetize them into a list for printing.
+Telephone directories have traditionally used special conventions for alphabetization, and S&TC wants your program to use these conventions. Each subscriber listing consists of one or more "words,'' where each word is separated from the others by spaces or non-alphanumeric characters. Directories only use the letters A through Z for sorting, ignoring case. Therefore, names that include words comprised of digits or capital letters require special processing.
+A listing may contain a word that is a decimal number. Listings with numbers in them appear in the alphabetized list in the same location they would if the numbers were spelled out in English. For example, "50 Star Company'' might appear just before "Fifty Star Vending'' in the list. Numbers are permitted to be in the range 0-999,999,999. Letters and digits will not appear together in the same word.
+All special (non-alphanumeric) characters are to be treated as spaces. "Penny-Wise Corporation'' would appear after "Penny Saver,'' but before "Pennypinching Company.'' Multiple spaces or non-alphanumeric characters are treated as a single space when sorting. Special characters will not appear at the beginning of a listing.
+Words that are comprised of all capital letters are assumed to be initials or acronyms, and are treated as if spaces appeared between each letter. Hence, "KAT Shop'' would appear at the beginning of the K listings, before "K-B Enterprises'' and "K Warehouse''. 
+Input to your program will be a list of subscribers, one per line. The first seven digits will be the telephone number, and the rest of the line will be the name of the subscriber as it is to appear in the telephone directory. Your program is to alphabetically sort the subscriber names according to the rules above and print the listing in order. Each line should contain the subscriber name as it appeared in the input in the first 52 positions, left justified and space filled, followed by the seven digit telephone number (including a space between the third and fourth digits) in columns 56 through 63. The telephone number is to be immediately followed by the end of line.
+Your program need not handle more than 1,000 subscribers-none of the towns S&TC serves in Swamp County have populations larger than that.
+ 
+Sample Input
+8936251KAT Shop
+7362812Penny Saver, Inc.
+7251887Kate's Company
+8372974Fine Foods
+9273664Five Star Vending
+3523984K-B Enterprises
+723621899 Cents Only Store
+ 
+Sample Output
+Fine Foods 
+837 2974
+Five Star Vending 
+927 3664
+KAT Shop 
+893 6251
+K-B Enterprises 
+352 3984
+Kate's Company 
+725 1887
+99 Cents Only Store 
+723 6218
+Penny Saver, Inc. 
+736 2812
+ 
+

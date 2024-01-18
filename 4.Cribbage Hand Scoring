@@ -1,0 +1,51 @@
+Cribbage Hand Scoring
+Cribbage is a two-to-four player card game invented by Sir John Suckling, a 17th century English knight, poet, playwright, and gambler. As a gentlemanly game of British origin, cribbage is steeped in tradition and complicated rules. In a traditional two-player game, each player is dealt six cards. The players discard two cards each to form the "crib," which is a four-card hand formed by the combination of discards. Each player retains a four-card hand. After discarding, the non-dealer cuts the remaining cards in the deck, and thedealer exposes the top card from the remaining cut deck to become the start card. Scoring has two distinct phases: the play, sometimes known as pegging, and the show, often known as counting. After the play, the non-dealer counts his hand, then the dealer counts his hand, and finally the dealer counts the crib, taking any points in the crib as his own.
+Your team is to write a program to score hands during the show. During the show, the start card becomes the fifth card for each player's hand and the crib. Each five-card hand is scored according to the following criteria:
+· The cards are ranked 1 (Ace), 2-10, Jack, Queen, King. Ace is always low.
+· Each unique pair scores two points. As an example, if a player or the crib holds the 8 of Hearts (8H), 8 of Spades (8S), 8 of Diamonds (8D), and 2 of Clubs (2C) with the start card being the Ace of Spades (AS), there are three unique pairs: 8H-8S, 8H-8D, and 8S-8D, producing six points.
+· Each unique combination of cards summing to 15 scores two points. Face cards (Jack, Queen, and King) have weights of 10, and all other cards have weights matching their pip counts. For example, a hand or crib containg the Ten of Hearts (TH), 6 of Diamonds (6D), 4 of Clubs (4C), and Ace of Hearts (AH) with the Jack of Clubs (JC) as the start card has two unique sets of cards adding up to 15: TH-4C-AH and JC-4C-AH, producing four points.
+· A four-card flush scores four points, unless in the crib. A four-card flush occurs when all of the cards in a player's hand are the same suit and the start card is a different suit. In the crib, a four-card flush scores no points.
+· A five-card flush scores five points. A five-card flush occurs when all of the cards in a player's hand or crib and the start card are the same suit.
+· Each unique run of three or more cards scores one point for each card in the run. A run is a sequence of three or more cards with consecutive rank. Only the longest runs possible in a hand are counted--if a four card run exists, the two three-card runs that can be made with the same cards are ignored. A hand or crib containing the Ace of Diamonds (AD), Jack of Spades (JS), Queen of Clubs (QC), and Queen of Hearts (QH) with a start card of King of Hearts (KH) has two unique runs of three cards: JS-QC-KH and JS-QH-KH, producing six points from the runs. Note: the pair of Queens adds an additional two points to the overall score for the hand.
+· Nobs scores one point. Nobs is when one of the cards in the four-card hand held by a player or crib is a Jack, and the suit of that Jack matches the suit of the start card.
+Input to the program is a series of cribbage hands to score, one hand per line. Each hand begins with a single character. "h" indicates that the hand is a player's hand, whereas "c" indicates the crib. A single space follows the "h" or "c", followed by five card specifications, each separated by a single space. The first four cards are the player's hand, in no special order; the fifth card is the start card. Each card is described by two characters: the first character is the rank, according to the table below, and the second character is the suit: "H" for Hearts, "D" for Diamonds, "S" for Spades, and "C" for Clubs. 
+1 (Ace)
+A
+2 (Deuce)
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+T
+Jack
+J
+Queen
+Q
+King
+K
+For each line of input there should be one line of output, starting with the word "Hand" or "Crib" corresponding to "h" or "c" from the input, a single space, the five-card hand as it appears in the input, a single space, an equal sign, a space, then the score for the hand, right justified in a two-character field.
+ 
+Sample Input
+h 8H 8S 8D 2C AH
+h TH 6D 4C AH JC
+c AD JS QC QH KH
+h 5S 6S 7S 8S 9C
+ 
+Sample Output
+Hand 8H 8S 8D 2C AH =  6
+Hand TH 6D 4C AH JC =  4
+Crib AD JS QC QH KH =  8
+Hand 5S 6S 7S 8S 9C = 13
+
